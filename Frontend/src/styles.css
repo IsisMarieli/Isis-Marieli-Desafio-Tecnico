@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+input,
+button,
+select {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+:root {
+    --white: #ffffff;
+    --gray-light: #CEDAEC;
+    --gray-dark: #1E1E1E;
+
+    --blue: #537BB7;
+    --green: #0BAB00;
+    --red: #BB271A;
+}
+
+@media (max-width: 748px) {
+    h1{
+        font-size: 2rem;
+    }
+
+    img{
+        width: 100px;
+   }
+
+    p{
+        font-size: 1rem;
+   }
+}
