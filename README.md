@@ -11,7 +11,9 @@ Este repositório contém a implementação de um módulo de cadastro de usuári
 
 ### Backend:
 - [Node.js](https://nodejs.org/)
-- [Prisma ORM](https://www.prisma.io/)
+- [MongoDB](https://www.mongodb.com/)
+- [Express](https://www.npmjs.com/package/express)
+- [Prisma ORM](https://www.prisma.io/docs/getting-started)
 ---
 
 ## 📜 Funcionalidades
