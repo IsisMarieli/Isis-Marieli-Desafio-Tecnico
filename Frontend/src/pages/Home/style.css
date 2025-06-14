@@ -13,6 +13,26 @@ h1 {
   text-align: center;
 }
 
+.card-section {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+
+  & h2 {
+    font-size: 1.5rem;
+    color: var(--blue);
+  }
+}
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 25%;
+  height: 80vh;
+  width: 100vw;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -23,8 +43,8 @@ form {
   border: 1px solid var(--gray-light);
   max-width: 50%;
   width: 400px;
-  margin-bottom: 20px;
-  margin-left: 57px;
+  margin-bottom: 80px;
+  margin-top: -10px;
 
   & button {
     border-radius: 20px;
@@ -68,17 +88,22 @@ form {
 
 .cards-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   overflow-y: auto;
   max-height: 100%;
   padding-right: 10px;
+  align-content: flex-start;
+  overflow-y: auto;
 }
 
 .card {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
   background-color: var(--white);
   border: 1px solid var(--gray-light);
   border-radius: 8px;
@@ -95,17 +120,61 @@ form {
     font-weight: normal;
   }
 
-  & 
-  .button-delete,
+  & .button-delete,
   .button-edit {
     background-color: transparent;
     border: none;
     cursor: pointer;
   }
 
-  & 
-  .button-delete:hover,
+  & .button-delete:hover,
   .button-edit:hover {
     opacity: 0.8;
+  }
+}
+
+
+@media (max-width: 1012px) {
+  .form-container {
+    margin-left: 25%;
+  }
+
+  form {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 786px) {
+  h1{
+    font-size: 20px;
+  }
+
+  .card-section h2{
+    font-size: 20px;
+  }
+
+  .form-container {
+    margin-left: 5%;
+    width: 100%;
+    height: auto;
+  }
+
+  form {
+    max-width: 90%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .form-container {
+    margin-left: 5%;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+
+  form {
+    padding: 20px;
+    width: 90%;
   }
 }

@@ -5,6 +5,9 @@ import Footer from '../../components/Footer.jsx'
 import Header from '../../components/Header.jsx'
 
 function Home() {
+    function clicar(){
+      alert('Usuário cadastrado!')
+    }
 
   const users = [{
     id: '0',
@@ -20,13 +23,111 @@ function Home() {
     email: ' Jessicancl@gmail.com',
     setor: ' Administração'
   },
+  {
+    id: '0',
+    nome: 'Isis',
+    sobrenome: 'Marieli',
+    email: ' Isismarieli1@gmail.com',
+    setor: ' TI(Desenvolvimento)'
+  },
+  {
+    id: '1',
+    nome: 'Jéssica',
+    sobrenome: 'Nicole',
+    email: ' Jessicancl@gmail.com',
+    setor: ' Administração'
+  },
+  {
+    id: '1',
+    nome: 'Jéssica',
+    sobrenome: 'Nicole',
+    email: ' Jessicancl@gmail.com',
+    setor: ' Administração'
+  },
+  {
+    id: '0',
+    nome: 'Isis',
+    sobrenome: 'Marieli',
+    email: ' Isismarieli1@gmail.com',
+    setor: ' TI(Desenvolvimento)'
+  },
+  {
+    id: '1',
+    nome: 'Jéssica',
+    sobrenome: 'Nicole',
+    email: ' Jessicancl@gmail.com',
+    setor: ' Administração'
+  },
+  {
+    id: '1',
+    nome: 'Jéssica',
+    sobrenome: 'Nicole',
+    email: ' Jessicancl@gmail.com',
+    setor: ' Administração'
+  },
+  {
+    id: '0',
+    nome: 'Isis',
+    sobrenome: 'Marieli',
+    email: ' Isismarieli1@gmail.com',
+    setor: ' TI(Desenvolvimento)'
+  },
+  {
+    id: '1',
+    nome: 'Jéssica',
+    sobrenome: 'Nicole',
+    email: ' Jessicancl@gmail.com',
+    setor: ' Administração'
+  },
+  {
+    id: '1',
+    nome: 'Jéssica',
+    sobrenome: 'Nicole',
+    email: ' Jessicancl@gmail.com',
+    setor: ' Administração'
+  },
+  {
+    id: '0',
+    nome: 'Isis',
+    sobrenome: 'Marieli',
+    email: ' Isismarieli1@gmail.com',
+    setor: ' TI(Desenvolvimento)'
+  },
+  {
+    id: '1',
+    nome: 'Jéssica',
+    sobrenome: 'Nicole',
+    email: ' Jessicancl@gmail.com',
+    setor: ' Administração'
+  },
+   {
+    id: '0',
+    nome: 'Isis',
+    sobrenome: 'Marieli',
+    email: ' Isismarieli1@gmail.com',
+    setor: ' TI(Desenvolvimento)'
+  },
+  {
+    id: '1',
+    nome: 'Jéssica',
+    sobrenome: 'Nicole',
+    email: ' Jessicancl@gmail.com',
+    setor: ' Administração'
+  },
+   {
+    id: '0',
+    nome: 'Isis',
+    sobrenome: 'Marieli',
+    email: ' Isismarieli1@gmail.com',
+    setor: ' TI(Desenvolvimento)'
+  },
   ]
 
   return (
     <>
       <Header />
       <div className='container'>
-        <form>
+        <form className='form-container'>
           <h1>Cadastro de Usuários</h1>
           <input name='nome' type='text' placeholder='Nome' />
           <input name='sobrenome' type='text' placeholder='Sobrenome' />
@@ -54,10 +155,13 @@ function Home() {
             <option value="ATENDIMENTO_CLIENTE">Atendimento ao Cliente</option>
 
           </select>
-          <button type='button'>Cadastrar</button>
+          <button onClick={clicar} type='button'>Cadastrar</button>
         </form>
 
-        <div className="cards-container">
+        <div className='cards-container'>
+        <div className='card-section'>
+          <h2>Usuários Recentes</h2>
+        </div>
           {users.map((user) => (
             <div key={user.id} className='card'>
               <div>
@@ -74,9 +178,9 @@ function Home() {
             </div>
           ))}
         </div>
-
-        <Footer />
       </div>
+
+      <Footer />
     </>
   )
 }
