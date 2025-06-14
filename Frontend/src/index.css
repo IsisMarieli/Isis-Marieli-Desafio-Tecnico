@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --white: #ffffff;
+    --gray-light: #CEDAEC;
+    --gray-dark: #1E1E1E;
+
+    --blue: #537BB7;
+    --green: #0BAB00;
+    --red: #BB271A;
+}
+
+body{
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--white);
+  background: linear-gradient(180deg,var(--blue) 0%, var(--gray-light) 100%);
+}
+
+html,
+body,
+input,
+button,
+select {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}

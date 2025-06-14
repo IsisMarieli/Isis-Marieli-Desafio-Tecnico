@@ -2,14 +2,17 @@
 
 Este repositório contém a implementação de um módulo de cadastro de usuários, desenvolvido como parte de um desafio técnico. O projeto segue uma arquitetura **frontend/backend**, utilizando tecnologias a seguir.
 
-## 🔧 Tecnologias utilizadas
+## 🚀 Tecnologias Utilizadas
 
-### **Frontend**
-- [Angular](https://angular.io/) - Framework para construção da interface web;
+### Frontend:
+- [React.js](https://reactjs.org/)
+- [Vite](https://vitejs.dev/) ou Create React App
+- CSS Modules
 
-### **Backend**
-- [Python](https://www.python.org/) - Linguagem de programação utilizada;
-
+### Backend:
+- [Node.js](https://nodejs.org/)
+- [Prisma ORM](https://www.prisma.io/)
+---
 
 ## 📜 Funcionalidades
 - Cadastro de usuários 

@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 100px;
+  gap: 20px;
+}
+
+h1 {
+  color: var(--blue);
+  font-size: 28px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 8px;
+  background: var(--white);
+  border: 1px solid var(--gray-light);
+  max-width: 50%;
+  width: 400px;
+  margin-bottom: 20px;
+  margin-left: 57px;
+
+  & button {
+    border-radius: 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    height: 36px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+  }
+
+  & button:hover {
+    opacity: 0.8;
+    color: var(--gray-dark);
+  }
+
+  & input {
+    border: var(--gray-light);
+    border-radius: 20px;
+    background: var(--white);
+    border: 1px solid var(--gray-light);
+    border-radius: 20px;
+    color: var(--blue);
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+
+  }
+
+  & select {
+    border: var(--gray-light);
+    border-radius: 20px;
+    background: var(--white);
+    border: 1px solid var(--gray-light);
+    border-radius: 20px;
+    height: 40px;
+    color: var(--blue);
+    outline: none;
+  }
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow-y: auto;
+  max-height: 100%;
+  padding-right: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--white);
+  border: 1px solid var(--gray-light);
+  border-radius: 8px;
+  padding: 8px;
+  width: 340px;
+  height: 90px;
+
+  & p {
+    color: var(--blue);
+    font-weight: bold;
+  }
+
+  & span {
+    font-weight: normal;
+  }
+
+  & 
+  .button-delete,
+  .button-edit {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  & 
+  .button-delete:hover,
+  .button-edit:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,27 +1,27 @@
-.footer-container{
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background: var(--white);
-    border-top: 1px solid var(--gray-light);
+    /* background: var(--white); */
+    /* border-top: 1px solid var(--gray-light); */
     padding: 10px;
     margin-top: 35px;
 }
 
-.logos .logo-wesafer{
+.logos .logoWesafer{
     margin-right: 10px;
 }
 
-.footer-container p{
-    display: block;
+.container p{
+    display: flex;
     justify-content: center;
-    margin-bottom: -10px;
+    align-items: center;
+    gap: 8px;
     margin-top: 20px;
     color: var(--blue);
-    font-weight: 600;
-    height: 5vh;
+    font-weight: bold;
 }
 
 a{
@@ -30,7 +30,7 @@ a{
 }
 
 @media (max-width: 480px) {
-    .footer-container {
+    .container {
         padding: 15px; 
         margin-top: 100px; 
     }
