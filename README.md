@@ -5,19 +5,22 @@ Este repositório contém a implementação de um módulo de cadastro de usuári
 ## 🚀 Tecnologias Utilizadas
 
 ### Frontend:
-- [React.js](https://reactjs.org/)
-- [Vite](https://vitejs.dev/) ou Create React App
-- [Axios](https://axios-http.com/) para requisições HTTP
-- CSS Modules
+- [React.js](https://reactjs.org/) (Framework principal)
+- [Vite](https://vitejs.dev/) (Build tool)
+- [Axios](https://www.npmjs.com/package/axios) (Client HTTP - instalado via npm)
+- CSS Modules (Estilização)
 
 ### Backend:
-- [Node.js](https://nodejs.org/)
-- [MongoDB](https://www.mongodb.com/)
-- [Express](https://expressjs.com/)
-- [Prisma ORM](https://www.prisma.io/)
+- [Node.js](https://nodejs.org/) (Runtime)
+- [MongoDB](https://www.mongodb.com/) (Banco de dados)
+- [Express](https://www.npmjs.com/package/express) (Framework web - instalado via npm)
+- [Prisma ORM](https://www.npmjs.com/package/prisma) (ORM - instalado via npm)
 
-## 📜 Funcionalidades
-- Cadastro de usuários
-- Listagem de usuários cadastrados
-- Atualização de informações dos usuários
-- Remoção de usuários do sistema
+## 📜 Funcionalidades Principais
+- ✅ Cadastro de usuários
+- 📋 Listagem de usuários cadastrados
+- ✏️ Atualização de informações dos usuários
+- 🗑️ Remoção de usuários do sistema
+
+## 📦 Dependências
+Todas as dependências principais (Prisma, Express e Axios) foram instaladas via npm como pacotes do projeto.
