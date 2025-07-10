@@ -40,7 +40,7 @@ function Home() {
     clearForm()
   }
 
-  // função para editar users com (post)
+  // função para editar users com (put)
   async function editUsers() {
     await api.put(`/usuarios/${editingUsers.id}`, {
       nome: inputNome.current.value,
